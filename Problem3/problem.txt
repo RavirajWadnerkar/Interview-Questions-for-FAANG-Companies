@@ -1,0 +1,59 @@
+Given a park in form of a rectangular matrix .
+
+Each Cell in park represents tree and each Tree may be on fire or not. If the cell is marked 1 then that tree is on fire else the tree is not on fire.
+
+Each Tree(On fire) can fire up all adjacent tree .
+
+i.e. if a tree is represented by x,y then it can fire up the following adjacent trees :
+
+x+1,y
+x-1,y
+x,y+1
+x,y-1
+
+At any point the fire does not come out of the park .
+
+You need to calculate the minimum time it will take to fire up the whole park.
+
+Input Format
+First line contains 2 integers n,m i.e no. of rows and columns
+
+Next n line contains m elements each represented by 0 or 1 (1 means on fire and 0 means not on fire)
+
+Constraints
+1<=n<=500
+
+1<=m<=500
+
+Output Format
+Single integer denoting time
+
+Sample Input
+4 5
+0 1 1 0 1
+0 1 0 1 0
+0 0 0 0 1
+0 0 1 0 0
+
+Sample Output
+2
+
+Explanation
+All the adjacent elements are in either left/right/up/down directions.
+Matrix before the fire spreads will be:
+0 1 1 0 1
+0 1 0 1 0
+0 0 0 0 1
+0 0 1 0 0
+
+After 1 unit of time, the matrix will be:
+1 1 1 1 1
+1 1 1 1 1
+0 1 1 1 1
+0 1 1 1 1
+
+After 2 unit of time, the matrix will be:
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1

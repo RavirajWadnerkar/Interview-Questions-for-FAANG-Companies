@@ -54,3 +54,6 @@ int main(){
 
 	return 0;
 }
+
+//By using recursion this problem is solved
+//You can also write using stack

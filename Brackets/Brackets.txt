@@ -1,4 +1,5 @@
 You need to find out the number of possible ways we can insert the brackets in the balanced format.
+Generate Balanced paranthesis.
 
 for instance:
 
@@ -11,3 +12,23 @@ the above strings are balanced
 the above strings are not balanced and so on
 
 If we insert 2 then the number of brackets then it should return only the correct balanced paranthesis.
+
+1) Your Input:
+
+2
+
+Output:
+
+(())
+()()
+
+
+2) Your Input:
+
+3
+
+Output:
+
+((()))
+(()())
+()()()
